@@ -90,6 +90,7 @@ const hide = document.getElementById('btn-hide')
 const show = document.getElementById('btn-show')
 const circle = document.getElementById('btn-circle')
 const reset = document.getElementById('btn-reset')
+const boxList = document.getElementById('box-list')
 
 hide.addEventListener('click', () => {
   box.classList.remove('show')
@@ -110,3 +111,19 @@ reset.addEventListener('click', () => {
   box.classList.remove('show')
   box.classList.remove('hide')
 })
+
+function addBoxes() {
+    var newBox = document.createElement('div') 
+    // bisa menambahkan elemen html apapun, disini kita menambahkan elemen div
+
+    // kita bisa menambahkan class pada elemen yang kita buat
+    newBox.classList.add('box')
+
+    // atau mengubah css nya
+    newBox.style.backgroundColor = 'orange' // warna bisa menggunakan HEX atau RGB
+    newBox.style.marginTop = '8px'
+
+    // lalu kita tambahkan kedalam elemen html lain
+    boxList.appendChild(newBox)
+}
+
