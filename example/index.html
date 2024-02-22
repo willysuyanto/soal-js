@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="header"></h1>
+
+    <p>Kita bisa mengubah tulisan diatas dengan Javascript. Coba masukkan tulisan apa saja kedalam inputan, lalu klik tombol ubah tulisan</p>
+    <input type="text" id="input-text" placeholder="Masukkan tulisan" />
+    <button onclick="doSomethingWhenButtonClicked()">Ubah Tulisan</button>
+
+    <p>Kita juga bisa mengubah warna tulisan diatas dendan cara mengubah CSS nya melalui Javascript, coba klik tombol dibawah ini</p>
+    <button onclick="ubahJadiMerah()">Jadi Merah</button>
+    <button onclick="ubahJadiKuning()">Jadi Kuning</button>
+    <button onclick="ubahJadiHijau()">Jadi Hijau</button>
+    <button onclick="ubahJadiBiru()">Jadi Biru</button>
+    <button onclick="jadiKecil()">Jadi Kecil</button>
+    <button onclick="jadiBesar()">Jadi Besar</button>
+
+    <p>Kita juga bisa mengubah tulisan diatas secara langsung mengikuti inputan dibawah. ketika diubah tulisan diatas akan ikut berubah</p>
+    <input id="input-text-2">
+
+    <p>Kita juga bisa membandingkan tulisan diatas dengan inputan dibawah ini</p>
+    <input type="text" id="input-text-3" placeholder="Masukkan tulisan"/>
+    <button onclick="bandingkan()">Bandingkan</button>
+    <p id="hasil">Hasil: </p>
+
+    <p>Kita juga bisa menambahkan class dan menghapus class dari sebuah elemen</p>
+    <div class="box" id="boxes"></div>
+    <button id="btn-show">Show</button>
+    <button id="btn-hide">Hide</button>
+    <button id="btn-circle">Jadi Bulat</button>
+    <button id="btn-reset">Reset</button>
+  </body>
+  <script src="script.js"></script>
+</html>

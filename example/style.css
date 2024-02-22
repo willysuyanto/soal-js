@@ -1,0 +1,17 @@
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
