@@ -12,9 +12,9 @@ headerTag.onclick = () => {
 }
 
 // bisa juga menggunakan event listener
-headerTag.addEventListener('click', () => {
-  doSomethingWhenButtonClicked()
-})
+// headerTag.addEventListener('click', () => {
+//   doSomethingWhenButtonClicked()
+// })
 
 // fungsi yang dijalankan saat elemen header di klik
 function doSomethingWhenHeaderClicked() {
@@ -66,8 +66,6 @@ function jadiBesar() {
 }
 
 const inputTag2 = document.getElementById('input-text-2')
-
-inputTag2.addEventListener('input', doSomethingWhenInputChanged())
 
 // fungsi yang dipanggil pada saat inputan berubah
 function doSomethingWhenInputChanged() {
